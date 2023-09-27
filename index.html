@@ -10,16 +10,20 @@
 
 <body>
 
-<header> <center><H1>Лабораторна робота №1</H1></center> 
-    <div><center>Основи побудови та публікації <em>HTML</em>-документів</center></div>
+<header style="text-align: center;"> <h1>Лабораторна робота №1</h1> 
+    <div>Основи побудови та публікації <em>HTML</em>-документів</div>
 </header>
-   
+<main>
+   <section>
+    <h2>Оформлений текст</h2>
    <div>Загальна кількість перестановок з <i>n</i></div>
    <div>елементів дорівнює <b>добутку всіх</b></div>
     <div><b>цілих чисел</b> від <i>1</i> до <i>n</i>:</div>
     <div>P<sub>n</sub>= 1<b>&#183</b> 2<b>&#183</b> 3<b>&#183</b>...<b>&#183</b>(n-2)<b>&#183</b>(n-1)<b>&#183</b>n.</div>
-    <p></p>
-    <div><center><h3>Список дисциплін 3-го курсу</h3></center></div>
+   </section>
+   <p></p>
+    <section>
+   <h2>Список дисциплін 3-го курсу</h2>
     <dl>
         <dt><h3>IntT:</h3></dt>
         <dd><b>Internet технології — </b>це технології створення і підтримки різних інформаційних ресурсів в комп'ютерній мережі Інтернет:
@@ -54,7 +58,11 @@
                                          набуття професійних навичок, що забезпечують збереження і зміцнення здоров'я 
                                          та психофізичну готовність до майбутньої професії.</dd>
     </dl>
-    <table align="center" width="50%" border="2">
+</section>
+<p></p>
+<section>
+    <h2>Фрагмент таблиці Менделєєва</h2>
+    <table style="margin-left: auto; margin-right: auto; width: 50 " border="2">
         <tr>
             <th width="5%" rowspan="2">Періоди</th>
             <th width="95%" colspan="5">Групи елементів</th>
@@ -67,7 +75,7 @@
             <td width="20%">V</td>
         </tr>
         <tr>
-            <td align="center">1</td>
+            <td style="text-align: center;">1</td>
             <td>H&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp1<sub>1.0079</sub><p>Гідроген</p></td>
             <td></td>
             <td></td>
@@ -75,7 +83,7 @@
             <td></td>
         </tr>
         <tr>
-            <td align="center">2</td>
+            <td style="text-align: center;">2</td>
             <td>Li&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp3<sub>6.941</sub><p>Літій</p></td>
             <td>Be&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp4<sub>9.01218</sub><p>Берилій</p></td>
             <td>B&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp5<sub>10.811</sub><p>Бор</p></td>
@@ -84,7 +92,7 @@
 
         </tr>
         <tr>
-            <td align="center">3</td>
+            <td style="text-align: center;">3</td>
             <td>Na&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp11<sub>22.990</sub><p>Натрій</p></td>
             <td>Mg&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp12<sub>24.305</sub><p>Магній</p></td>
             <td>Al&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp13<sub>26.982</sub><p>Алюміній</p></td>
@@ -93,21 +101,26 @@
         </tr>
 
     </table>
+</section>
 <p></p>
-<p></p>
-   <form action="">
-   <center> <label for="PC">Введіть комплектуючі вашого ПК</label></center>
-   <center> <input required id="PC" type="text" placeholder="Processor"></center> 
-   <center> <input required id="PC" type="text" placeholder="Motherboard"></center> 
-   <center> <input required="PC" type="text" placeholder="GPU"></center> 
-   <center> <input required id="PC" type="text" placeholder="RAM"></center> 
-   <center> <input required id="PC" type="text" placeholder="ROM"></center> 
+<section>
+    <h2>Форма з керуючими елементами</h2>
+   <form action="" style="text-align: center;">
+    <div><label for="PC">Введіть комплектуючі вашого ПК</label></div>
+    <div><input required id="PC" type="text" placeholder="Processor"></div>
+   <div><input required id="PC" type="text" placeholder="Motherboard"></div>
+    <div><input required="PC" type="text" placeholder="GPU"></div>
+    <div><input required id="PC" type="text" placeholder="RAM"></div>
+    <div><input required id="PC" type="text" placeholder="ROM"> </div>
    <p></p>
-   <center><input type="submit"> <input type="reset"></center> 
+   <input type="submit"> <input type="reset">
   
    </form>
+</section>
+</main>
+<footer style="text-align: center"  >
    <p></p>
-   <center>
+   
    <img src="img/KHNURE.png" alt="KHNURE" usemap="#mapOfUnuversity">
    <map name="mapOfUnuversity">
     <area shape="rect" coords="175, 125, 220, 180" href="https://nure.ua/" alt="Сайт університету" title="University's website">
@@ -115,7 +128,8 @@
     <area shape="poly" coords="25, 230, 70, 200, 100, 230, 90, 275, 40, 275" 
     href="https://cist.nure.ua/ias/app/tt/f?p=778:2:1487771444244488::NO:::" alt="Розклад занять" title="cist.nure.ua">
    </map>
-   </center>
+   
+   </footer>
 
 
 
